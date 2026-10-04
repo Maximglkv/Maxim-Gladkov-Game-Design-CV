@@ -395,6 +395,122 @@ h1 {
   letter-spacing: 0.04em;
 }
 
+.project-card-featured {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.4fr);
+  gap: 22px;
+  align-items: stretch;
+  padding: 18px;
+}
+
+.project-thumbnail-link {
+  position: relative;
+  display: block;
+  min-height: 290px;
+  overflow: hidden;
+  border: 1px solid rgba(214, 30, 58, 0.7);
+  border-radius: 12px;
+  background: #10090d;
+}
+
+.project-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+  object-fit: cover;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.project-thumbnail-link:hover .project-thumbnail,
+.project-thumbnail-link:focus-visible .project-thumbnail {
+  transform: scale(1.035);
+  filter: brightness(1.12);
+}
+
+.thumbnail-cta {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 154, 172, 0.65);
+  border-radius: 999px;
+  background: rgba(10, 8, 12, 0.88);
+  color: var(--bone);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-content {
+  align-self: center;
+}
+
+.project-role {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 10px;
+  color: var(--rose);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contributions-heading {
+  position: relative;
+  z-index: 1;
+  margin: 18px 0 8px;
+  color: var(--bone);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contribution-list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ash);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.contribution-list li::marker {
+  color: var(--crimson-bright);
+}
+
+.project-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(214, 30, 58, 0.8);
+  border-radius: 999px;
+  background: rgba(214, 30, 58, 0.14);
+  color: var(--bone);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  background: rgba(214, 30, 58, 0.28);
+  box-shadow: 0 0 20px rgba(214, 30, 58, 0.2);
+  transform: translateY(-2px);
+}
+
 .skill-icon {
   position: relative;
   z-index: 1;
@@ -473,6 +589,15 @@ h1 {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .project-thumbnail-link,
+  .project-thumbnail {
+    min-height: 210px;
   }
 
   .stat {

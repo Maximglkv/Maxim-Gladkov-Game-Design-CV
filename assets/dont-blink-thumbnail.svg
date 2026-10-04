@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Don't Blink</title>
+  <desc id="desc">An original illustrated supermarket aisle dissolving into a crimson psychological-horror nightmare.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08090d"/>
+      <stop offset=".53" stop-color="#1a1117"/>
+      <stop offset="1" stop-color="#390c19"/>
+    </linearGradient>
+    <linearGradient id="aisle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6c5b6" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d6c5b6" stop-opacity=".02"/>
+    </linearGradient>
+    <linearGradient id="redlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a1024" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ed2548" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#7a1024" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette">
+      <stop offset=".45" stop-color="#050509" stop-opacity="0"/>
+      <stop offset="1" stop-color="#050509" stop-opacity=".88"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="17" r="1" fill="#fff" opacity=".2"/>
+      <circle cx="47" cy="84" r="1.2" fill="#ff9aac" opacity=".16"/>
+      <circle cx="102" cy="38" r=".8" fill="#fff" opacity=".18"/>
+      <circle cx="79" cy="111" r="1" fill="#fff" opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#background)"/>
+  <path d="M240 0h720L690 760H510z" fill="url(#aisle)"/>
+  <path d="M0 145 455 260v500H0z" fill="#101116"/>
+  <path d="m1200 145-455 115v500h455z" fill="#111016"/>
+
+  <g opacity=".72" stroke="#c7b4aa" stroke-opacity=".35" fill="none">
+    <path d="M0 185 458 291M0 275 458 359M0 373 458 427M0 483 458 503M0 608 458 582" stroke-width="10"/>
+    <path d="m1200 185-458 106m458-16L742 359m458 14-458 54m458 56-458 20m458 105-458-26" stroke-width="10"/>
+    <path d="M36 205v403m97-380v367m98-342v317m97-293v268m97-245v219M1164 205v403m-97-380v367m-98-342v317m-97-293v268m-97-245v219" stroke-width="3"/>
+  </g>
+
+  <g opacity=".8">
+    <path d="M62 212h70v42H62zm104 25h76v40h-76zm-86 93h100v48H80zm144 23h104v43H224zM35 469h110v54H35zm184 18h119v50H219z" fill="#6d2533"/>
+    <path d="M1066 212h72v42h-72zm-104 25h76v40h-76zm86 93H948v48h100zm-144 23H800v43h104zm201 98H995v54h110zm-184 18H802v50h119z" fill="#4a2630"/>
+    <path d="M62 254h70v5H62zm18 99h100v5H80zm-45 166h110v5H35zm986-265h72v5h-72zm-118 99h100v5H948zm94 166h110v5h-110z" fill="#d9bda8" opacity=".55"/>
+  </g>
+
+  <path d="M495 760 568 282h64l73 478z" fill="#08090d" opacity=".86"/>
+  <path d="m600 260 0 500" stroke="#a91a31" stroke-opacity=".26" stroke-width="2"/>
+  <path d="M0 660 480 580h240l480 80v100H0z" fill="#09090d"/>
+  <path d="M0 660 480 580h240l480 80" fill="none" stroke="#bd263d" stroke-opacity=".45" stroke-width="3"/>
+
+  <ellipse cx="600" cy="410" rx="126" ry="190" fill="#d61e3a" opacity=".28" filter="url(#glow)"/>
+  <path d="M600 284c-38 0-70 54-70 122s32 122 70 122 70-54 70-122-32-122-70-122zm-26 100c12-17 40-17 52 0-15 9-37 9-52 0z" fill="#09080d" opacity=".92"/>
+  <path d="M580 382q20 22 40 0" fill="none" stroke="#ff647b" stroke-width="5" opacity=".92"/>
+  <path d="M591 408h18" stroke="#f3e7df" stroke-width="3" opacity=".88"/>
+  <path d="M557 360q43-58 86 0" fill="none" stroke="#ed2548" stroke-width="3" opacity=".7"/>
+
+  <rect width="1200" height="760" fill="url(#redlight)"/>
+  <path d="M0 76h1200" stroke="#f3e7df" stroke-opacity=".18"/>
+  <path d="M600 0v760" stroke="#f3e7df" stroke-opacity=".08" stroke-dasharray="8 20"/>
+  <rect width="1200" height="760" fill="url(#grain)" opacity=".6"/>
+  <rect width="1200" height="760" fill="url(#vignette)"/>
+
+  <g transform="translate(66 68)">
+    <path d="M0 0h174M0 18h94M0 36h128" stroke="#ed2548" stroke-width="3" opacity=".8"/>
+    <text x="0" y="102" fill="#f3e7df" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="900" letter-spacing="5">DON'T</text>
+    <text x="0" y="184" fill="#ff4460" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="900" letter-spacing="5">BLINK</text>
+    <text x="4" y="224" fill="#b3bec9" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="5">A PSYCHOLOGICAL HORROR SIMULATION</text>
+  </g>
+
+  <g transform="translate(1014 82)" fill="none" stroke="#ff4460" stroke-opacity=".7">
+    <path d="M35 0 70 35 35 70 0 35z" stroke-width="2"/>
+    <path d="M35 12v46M12 35h46M19 19l32 32m0-32L19 51" stroke-width="1"/>
+  </g>
+</svg>
