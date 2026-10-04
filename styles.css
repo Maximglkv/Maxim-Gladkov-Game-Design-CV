@@ -422,6 +422,31 @@ h1 {
   padding: 18px;
 }
 
+.project-card-compact {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+}
+
+.project-card-compact .project-thumbnail-link {
+  max-height: 150px;
+}
+
+.project-card-compact .project-thumbnail {
+  max-height: 150px;
+}
+
+.project-card-compact .project-content h3 {
+  margin-top: 8px;
+}
+
+.project-card-compact .project-link {
+  margin-top: 12px;
+}
+
 .project-thumbnail-link {
   position: relative;
   display: flex;
@@ -617,9 +642,19 @@ h1 {
     gap: 16px;
   }
 
+  .project-card-compact {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .project-thumbnail-link,
   .project-thumbnail {
     max-height: 220px;
+  }
+
+  .project-card-compact .project-thumbnail-link,
+  .project-card-compact .project-thumbnail {
+    max-height: 180px;
   }
 
   .stat {
