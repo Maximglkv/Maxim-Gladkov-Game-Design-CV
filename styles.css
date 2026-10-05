@@ -296,6 +296,59 @@ h1 {
   gap: 12px;
 }
 
+.experience-list {
+  display: grid;
+  gap: 12px;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.8fr) minmax(0, 1.6fr);
+  gap: 12px 24px;
+  align-items: start;
+  padding: 18px;
+  border: 1px solid rgba(214, 30, 58, 0.5);
+  border-radius: 14px;
+  background: rgba(214, 30, 58, 0.04);
+}
+
+.experience-heading h3 {
+  margin: 0 0 6px;
+  color: var(--bone);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.experience-company {
+  margin: 0;
+  color: var(--rose);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.experience-date {
+  margin: 8px 0 0;
+  color: var(--ash);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
+
+.experience-highlights {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ash);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.experience-highlights li::marker {
+  color: var(--crimson-bright);
+}
+
 .stat-box {
   display: flex;
   flex-direction: column;
@@ -647,6 +700,15 @@ h1 {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .experience-date {
+    margin-top: 5px;
   }
 
   .projects-grid,
