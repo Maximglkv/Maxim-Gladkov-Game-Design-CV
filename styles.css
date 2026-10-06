@@ -60,7 +60,6 @@ body::before {
   overflow: hidden;
 }
 
-.hero-card::after,
 .panel-section::after {
   content: "";
   position: absolute;
@@ -124,7 +123,7 @@ body::before {
   position: relative;
   overflow: hidden;
   border-radius: 24px;
-  padding: 0 24px;
+  padding: 24px;
   min-height: 170px;
   display: flex;
   align-items: center;
@@ -144,9 +143,32 @@ body::before {
   z-index: 1;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 120px;
+  gap: 18px;
+}
+
+.hero-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+}
+
+.hero-contact-link {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hero-contact-link:hover,
+.hero-contact-link:focus-visible {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 h1 {
@@ -324,6 +346,38 @@ h1 {
   background: rgba(0, 0, 0, 0.02);
 }
 
+.job-skills {
+  grid-column: 1 / -1;
+}
+
+.job-skills h4 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.job-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.job-skills li {
+  padding: 5px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.025);
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
 .experience-heading h3 {
   margin: 0 0 6px;
   color: var(--ink);
@@ -492,6 +546,25 @@ h1 {
   letter-spacing: 0.04em;
 }
 
+.project-soft-skills {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.project-soft-skills span {
+  padding: 5px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.055);
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
 .project-card-featured {
   display: flex;
   flex-direction: column;
@@ -641,45 +714,6 @@ h1 {
   display: inline-block;
   font-size: 1.8rem;
   filter: drop-shadow(0 0 14px rgba(0, 0, 0, 0.08));
-}
-
-.contact-panel {
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-.contact-content {
-  color: var(--ink-soft);
-  line-height: 1.8;
-}
-
-.contact-content p {
-  margin: 0 0 18px;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.contact-link {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.04);
-  color: var(--ink);
-  text-decoration: none;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contact-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
 
 .footer-section {
