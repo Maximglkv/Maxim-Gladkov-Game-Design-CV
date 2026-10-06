@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxim Gladkov | Game Design CV</title>
-    <link rel="stylesheet" href="styles.css?v=20261006-1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20261006-3" />
   </head>
   <body>
     <div class="stars"></div>
@@ -17,7 +20,6 @@
 
       <section class="panel-section">
         <div class="section-header">
-          <span class="section-icon">☠</span>
           <h2>About Me</h2>
           <div class="section-line"></div>
         </div>
@@ -51,7 +53,6 @@
 
       <section class="panel-section">
         <div class="section-header">
-          <span class="section-icon" aria-hidden="true">💼</span>
           <h2>Experience</h2>
           <div class="section-line"></div>
         </div>
@@ -105,7 +106,6 @@
 
       <section class="panel-section">
         <div class="section-header">
-          <span class="section-icon">🎯</span>
           <h2>Showcase</h2>
           <div class="section-line"></div>
         </div>
@@ -268,7 +268,6 @@
 
       <section class="panel-section contact-panel">
         <div class="section-header">
-          <span class="section-icon">✉</span>
           <h2>Contact</h2>
           <div class="section-line"></div>
         </div>
@@ -296,18 +295,20 @@
     </main>
 
     <script>
-      function createStars() {
+      function createSnowflakes() {
         const container = document.querySelector('.stars');
-        for (let i = 0; i < 60; i++) {
-          const star = document.createElement('div');
-          star.className = 'star';
-          star.style.left = Math.random() * 100 + '%';
-          star.style.top = Math.random() * 100 + '%';
-          star.style.animationDelay = Math.random() * 3 + 's';
-          container.appendChild(star);
+        for (let i = 0; i < 80; i++) {
+          const flake = document.createElement('span');
+          flake.className = 'star';
+          flake.style.setProperty('--left', (Math.random() * 100) + '%');
+          flake.style.setProperty('--size', (Math.random() * 4 + 2) + 'px');
+          flake.style.setProperty('--delay', (Math.random() * 10) + 's');
+          flake.style.setProperty('--duration', (Math.random() * 8 + 10) + 's');
+          flake.style.setProperty('--drift', ((Math.random() * 80) - 40) + 'px');
+          container.appendChild(flake);
         }
       }
-      createStars();
+      createSnowflakes();
     </script>
   </body>
 </html>
